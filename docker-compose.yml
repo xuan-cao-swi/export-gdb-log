@@ -1,0 +1,8 @@
+services:
+  seg-fault-container:
+    image: seg-fault-container:latest
+    build:
+      dockerfile: Dockerfile
+    volumes:
+      - .:/var/app/gdblog
+    container_name: seg-fault-container-1
